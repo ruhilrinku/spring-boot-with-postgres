@@ -25,7 +25,7 @@ class SpringBootAppApplicationTests {
         ResponseEntity<String> response = restTemplate.getForEntity("/actuator/health", String.class);
 
         Assertions.assertThat(response.getStatusCode()).isEqualTo(HttpStatus.OK);
-        Assertions.assertThat(response.getBody()).isEqualTo("{\"status\":\"UP\"}");
+        Assertions.assertThat(response.getBody()).isEqualTo("{\"status\":\"UP\",\"groups\":[\"liveness\",\"readiness\"]}");
     }
 
     @Test
