@@ -8,9 +8,6 @@ CREATE TABLE company(
    description VARCHAR(256)
 );
 
-CREATE TABLE student(
-   id INT PRIMARY KEY,
-   code VARCHAR(40),
-   name VARCHAR(100),
-   description VARCHAR(256)
-);
+CREATE SEQUENCE company_id_seq
+  start 1
+  increment 1;
