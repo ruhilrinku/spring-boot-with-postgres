@@ -8,6 +8,6 @@ CREATE TABLE company(
    description VARCHAR(256)
 );
 
-CREATE SEQUENCE company_id_seq
+CREATE SEQUENCE IF NOT EXISTS company_id_seq
   start 1
   increment 1;
