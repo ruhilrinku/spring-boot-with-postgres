@@ -2,7 +2,7 @@
 --changeset nishant_kumar:create-tables
 
 CREATE TABLE company(
-   id INT PRIMARY KEY,
+   id Serial PRIMARY KEY,
    code VARCHAR(40),
    name VARCHAR(100),
    description VARCHAR(256)
